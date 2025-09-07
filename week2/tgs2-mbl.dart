@@ -1,0 +1,22 @@
+//Muh. Aidil iskandar - D121221094
+int fibonacci(int n) {
+  if (n == 0) return 0;
+  if (n == 1) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int faktorial(int n) {
+  if (n == 0) return 1;
+  return n * faktorial(n - 1);
+}
+String toBinary(int n) {
+  return n.toRadixString(2);
+}
+
+void main() {
+  int N = 5;
+
+  print("Fibonacci ke-$N = ${fibonacci(N)}");
+  print("Faktorial dari $N = ${faktorial(N)}");
+  print("Angka biner dari $N = ${toBinary(N)}");
+}
